@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- REACT LIBRARY -->
+  <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+  <!-- REACT DOM LIBRARY -->
+  <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+  <!-- BABEL LIBRARY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+  <title>Let's React!</title>
+</head>
+
+  <body>
+<div id="app"> React is not render yet </div>
+<div id = "paragraph"> I'm  a paragraph but not render </div>
+<div id = "link"> I'm  a paragraph but not render </div>
+<div id = "list"> I'm  a list  but not render </div>
+
+   <!-- JAVASCRIPT -->
+   <script type="text/babel">
+     // RENDER REACT TO THE DOM - WILL ACCEPT TWO ARGUMENTS (REACT WHAT, REACT WHERE)
+     ReactDOM.render(
+       // REACT WHAT - JSX
+       <h1>Hello World</h1>,
+       // REACT WHERE - DIV WITH ID OF "APP"
+       document.getElementById("app")
+     );
+
+     ReactDOM.render(<p>I'm a paragragh that rendered now   !! :D </p> ,
+     document.getElementById("paragraph"));
+
+
+          ReactDOM.render(<a href = "https://www.w3schools.com/html/html_lists.asp">CLick here !! </a> ,
+          document.getElementById("link"))
+
+     ReactDOM.render(<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>,document.getElementById("list"));
+   </script>
+
+  </body>
+</html>
